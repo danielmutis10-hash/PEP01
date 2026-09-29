@@ -1,14 +1,16 @@
 num = float(input("Dame la nota"))
 
-if num >= 0 and num <5:
-    print("Insuficiente")
-elif num >=5 and num <6:
-    print("Suficiente")
-elif num >=6 and num <7:
-    print("Bien")
-elif num >=7 and num <9:
-    print("Notable")
-elif num >= 9 and num <=10:
-    print("Sobresaliente")
-else:
-    print("Número incorrecto")
+match num:
+    case n if 0 <= n < 5:
+        print("Insuficiente")
+    case n if 5 <= n < 6:
+        print("Suficiente")
+    case n if 6 <= n < 7:
+        print("Bien")
+    case n if 7 <= n < 9:
+        print("Notable")
+    case n if 9 <= n <= 10:
+        print("Sobresaliente")
+    case _:
+        print("Nota introducida no es válida.")
+
