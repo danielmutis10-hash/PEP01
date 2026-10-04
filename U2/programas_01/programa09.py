@@ -1,16 +1,16 @@
 import random
 
-print("1. Piedra")
-print("2. Papel")
-print("3. Tijera")
-print(" ")
-usuario = int(input("Seleccione una opción (1, 2 o 3): "))
+print("1. Piedra\n")
+print("2. Papel\n")
+print("3. Tijera\n")
+print("\n")
+usuario = int(input("Seleccione una opción (1, 2 o 3) \n: "))
 
 # Validar que la opción elegida sea correcta
 if usuario not in [1, 2, 3]:
     print("Error: Opción no válida. Debes introducir 1, 2 o 3.")
 else:
-    # Elección aleatoria del ordenador (1: Piedra, 2: Papel, 3: Tijera)
+    # Elección aleatoria del ordenador
     ordenador = random.randint(1, 3)
 
     # Nombres de las opciones para mostrar por pantalla
