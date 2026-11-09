@@ -1,8 +1,5 @@
 import math
 
-'''
-'''
-
 # --- FUNCIONES DE CÁLCULO ---
 
 def calcular_area_circulo(radio):
@@ -30,10 +27,10 @@ def opcion1():
             radio = float(input("Introduce el radio del círculo: "))
             if radio > 0:
                 area = calcular_area_circulo(radio)
-                print(f"-> El área del círculo es: {area:.2f}")
+                print(f"El área del círculo es: {area:.2f}")
                 break
             else:
-                print("Aviso: El radio debe ser mayor que 0.")
+                print("El radio debe ser mayor que 0.")
         except ValueError:
             print("Error: Introduce un valor numérico válido.")
 
@@ -44,10 +41,10 @@ def opcion2():
             altura = float(input("Introduce la altura del triángulo: "))
             if base > 0 and altura > 0:
                 area = calcular_area_triangulo(base, altura)
-                print(f"-> El área del triángulo es: {area:.2f}")
+                print(f"El área del triángulo es: {area:.2f}")
                 break
             else:
-                print("Aviso: La base y la altura deben ser mayores que 0.")
+                print("La base y la altura deben ser mayores que 0.")
         except ValueError:
             print("Error: Introduce valores numéricos válidos.")
 
@@ -58,7 +55,7 @@ def opcion3():
             altura = float(input("Introduce la altura del rectángulo: "))
             if base > 0 and altura > 0:
                 area = calcular_area_rectangulo(base, altura)
-                print(f"-> El área del rectángulo es: {area:.2f}")
+                print(f"El área del rectángulo es: {area:.2f}")
                 break
             else:
                 print("Aviso: La base y la altura deben ser mayores que 0.")
@@ -68,26 +65,24 @@ def opcion3():
 
 # FUNCIÓN PRINCIPAL 
 
-def main():
-    while True:
-        mostrar_menu()
-        try:
-            opcion = int(input("Introduce una opción (1-4): "))
-            
-            if opcion == 1:
-                opcion1()
-            elif opcion == 2:
-                opcion2()
-            elif opcion == 3:
-                opcion3()
-            elif opcion == 4:
-                print("Saliendo del programa. ¡Hasta pronto!")
-                break
-            else:
-                print("Error: Opción fuera de rango. Debe ser un número entre 1 y 4.")
-                
-        except ValueError:
-            print("Error: Entrada no válida. Introduce un número entero del 1 al 4.")
 
-if __name__ == "__main__":
-    main()
+while True:
+    mostrar_menu()
+    try:
+        opcion = int(input("Introduce una opción (1-4): "))
+
+        if opcion == 1:
+            opcion1()
+        elif opcion == 2:
+            opcion2()
+        elif opcion == 3:
+            opcion3()
+        elif opcion == 4:
+            print("Saliendo del programa. ¡Hasta pronto!")
+            break
+        else:
+            print("Error: Opción fuera de rango. Debe ser un número entre 1 y 4.")
+                
+    except ValueError:
+        print("Error: Entrada no válida. Introduce un número entero del 1 al 4.")
+
