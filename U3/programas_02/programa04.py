@@ -21,7 +21,7 @@ for _ in range(4):
 #Círculo verde relleno
 
 t.penup()
-t.goto(100, -50)#Nos movemos a otra posición para no solapar las figuras
+t.goto(100, -50)
 t.pendown()
 
 t.pencolor("green")#Color del borde del círculo
