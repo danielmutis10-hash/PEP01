@@ -1,6 +1,8 @@
-def main():
-    print("Hello from proyectouvcode01!")
+import cowsay
 
-
-if __name__ == "__main__":
+def main(): 
+    cowsay.cow("Holaaaa 2DAW!") 
+    cowsay.tux("Holaaaa 2DAW!")
+    
+if __name__ == "__main__": 
     main()
